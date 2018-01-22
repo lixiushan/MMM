@@ -1,0 +1,93 @@
+@charset "UTF-8";
+.header {
+  background-color: #f4483e;
+}
+.header .logo {
+  padding: 0;
+}
+.header .logo a {
+  display: block;
+  color: white;
+  height: 100%;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  padding-left: 0.2rem;
+}
+.header .title {
+  position: absolute;
+  font-size: 0.4rem;
+  color: white;
+  font-weight: 700;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.subTitle {
+  font-size: 0.24rem;
+  color: #999;
+  text-align: center;
+  padding: 0.2rem;
+}
+.list li {
+  border-top: 5px solid #eee;
+}
+.list a {
+  display: block;
+  padding: 0.3rem 0.2rem;
+  position: relative;
+}
+.list .img img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.2rem;
+}
+.list .content {
+  height: 100%;
+  overflow: hidden;
+  font-size: 0.28rem;
+  color: black;
+}
+.list .youxiao {
+  color: #EE7700;
+  position: absolute;
+  bottom: 0.28rem;
+  left: 2.4rem;
+  font-size: 0.24rem;
+}
+.mask {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 33;
+}
+.mask .box {
+  width: 200px;
+  margin: 200px auto;
+  position: relative;
+}
+.mask .box .arr-left,
+.mask .box .arr-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ccc;
+  z-index: 99;
+}
+.mask .box .arr-left {
+  left: -40px;
+}
+.mask .box .arr-right {
+  right: -40px;
+}
+.mask .screen {
+  overflow: hidden;
+}
+.mask .screen li {
+  float: left;
+}
+.mask .screen li img {
+  width: 200px;
+}

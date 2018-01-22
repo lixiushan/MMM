@@ -1,0 +1,149 @@
+@charset "UTF-8";
+body {
+  background-color: #f1f1f1;
+}
+.header {
+  .logo{
+    padding: 0;
+    a{
+      display: block;
+      color: white;
+      height: 100%;
+      font-size: 30/50rem;
+      line-height: 50/50rem;
+      padding-left: 10/50rem;
+    }
+  }
+  .title {
+    position: absolute;
+    //text-align: left;
+    font-size: 20/50rem;
+    color: white;
+    font-weight:700;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    //overflow: hidden;
+  }
+
+}
+
+.nav {
+  height: 42/50rem;
+  position: relative;
+  margin-bottom: 5/50rem;
+  .item{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    li {
+      float: left;
+      width: 31%;
+      font-size: 16/50rem;
+      a{
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 10/50rem 0;
+        span {
+          vertical-align: bottom;
+        }
+      }
+    }
+  }
+  .jd,.hb,.total {
+    background-color: #fff;
+    font-size: 16/50rem;
+    position: absolute;
+    width: 100%;
+    a{
+      color: black;
+      display: block;
+      padding: 5/50rem 10/50rem;
+      border-bottom: 1px solid #eee;
+    }
+  }
+  //.jd {
+  //
+  //}
+  .jd.active,.hb.active,.total.active{
+    display: none;
+  }
+  .jd span,
+  .hb span,
+  .total span {
+    color: #ff841d;
+    font-size: 18/50rem;
+  }
+  .jd span.active,
+  .hb span.active {
+    display: none;
+  }
+  .jd span.now,
+  .hb span.now{
+    display: block;
+  }
+  .icon {
+    height: 97%;
+    width: 40/50rem;
+    position: absolute;
+    font-size:20/50rem;
+    color: #666;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    span {
+      margin-top: 10/50rem;
+      margin-left: 10/50rem;
+    }
+  }
+}
+
+.content {
+  padding: 1%;
+  li {
+    background-color: #fff;
+    float: left;
+    width: (99/2)*1%;
+    margin-bottom: 1%;
+  }
+  li:nth-child(odd){
+    margin-right: 1%;
+  }
+  a {
+    display: block;
+    padding: 0 5/50rem 5/50rem;
+    //position: relative;
+    .img {
+      height: 180/50rem;
+    }
+    img {
+      width: 180/50rem;
+      height: 180/50rem;
+      margin: 0 auto;
+    }
+    .desc {
+      //position: absolute;
+      //bottom: 0;
+      //left: 0;
+      .title {
+        font-size: 12/50rem;
+        color: black;
+      }
+      .money {
+        font-size: 20/50rem;
+        color: #f8601d;
+        span {
+          padding: 5/50rem 8/50rem;
+          border-radius: 3/50rem;
+          background-color: #ff9501;
+          width: 80/50rem;
+          color: #fff;
+          font-size: 14/50rem;
+          text-align: center;
+          margin-bottom:5/50rem;
+        }
+      }
+    }
+  }
+}

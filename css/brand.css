@@ -1,0 +1,193 @@
+@charset "UTF-8";
+.search {
+  height: 1rem;
+  background-color: #fff;
+  padding: 0.2rem;
+  border-bottom: 1px solid #ccc;
+}
+.main {
+  height: auto;
+}
+.search input {
+  background-color: #efeff4;
+  border: none;
+  height: 0.6rem;
+  width: 90%;
+  border-radius: 0.3rem;
+  font-size: 0.28rem;
+  padding: 0;
+  padding-left: 0.4rem;
+}
+.search button {
+  width: 1.28rem;
+  height: 0.6rem;
+  padding: 0;
+  border: none;
+  background-color: #ff841d;
+  border-radius: 0.3rem;
+  font-size: 0.32rem;
+  color: white;
+}
+.nav {
+  font-size: 0.32rem;
+  font-weight: normal;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  background-image: linear-gradient(#ffffff, rgba(0, 0, 0, 0.2));
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #aaa;
+  padding: 0 0.2rem;
+  margin-bottom: 0.2rem;
+}
+.nav a {
+  color: black;
+}
+.list h5 {
+  color: #874604;
+  font-size: 0.32rem;
+  padding: 0.16rem 0.2rem;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+.list .brand1 a {
+  display: block;
+  padding: 0.2rem;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  background-color: #fff;
+}
+.list .brand1 a .num {
+  width: 0.4rem;
+  margin-right: 0.2rem;
+}
+.list .brand1 a .num i {
+  display: block;
+  font-size: 0.32rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  text-align: center;
+  line-height: 0.4rem;
+  background-color: #c9c9c9;
+  color: white;
+}
+.list .brand1 a .content {
+  height: 100%;
+  overflow: hidden;
+}
+.list .brand1 a .content .productName {
+  font-size: 0.32rem;
+  color: black;
+  line-height: 0.6rem;
+}
+.list .brand1 a .content .mai {
+  font-size: 0.28rem;
+  color: #999;
+}
+.list .brand1 a .arrow {
+  position: absolute;
+  font-size: 0.48rem;
+  color: #999;
+  top: 26%;
+  right: 1%;
+}
+.list .brand2 li {
+  border-bottom: 1px solid #ccc;
+  padding: 0.2rem 0.2rem;
+}
+.list .brand2 a {
+  height: 2rem;
+  position: relative;
+}
+.list .brand2 img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.4rem;
+}
+.list .brand2 .content {
+  height: 100%;
+  overflow: hidden;
+  font-size: 0.32rem;
+  color: black;
+  position: relative;
+}
+.list .brand2 .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.list .brand2 .bottom .price {
+  color: #ea3900;
+  margin-bottom: 0.1rem;
+  font-size: 0.4rem;
+}
+.list .brand2 .bottom .comment {
+  color: #999;
+  font-size: 0.24rem;
+}
+.list .brand2 .stars {
+  color: #ff9314;
+  position: absolute;
+  right: 0%;
+  top: 50%;
+}
+.list .brand2 .stars i {
+  float: left;
+  font-size: 0.48rem;
+}
+.list .comment1 li {
+  border-top: 1px solid #ccc;
+}
+.list .comment1 li .jiao1 {
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  top: -0.36rem;
+  left: 0.72rem;
+  border: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid #f8f8f8;
+  z-index: 2;
+}
+.list .comment1 li .jiao2 {
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  top: -0.38rem;
+  left: 0.72rem;
+  border: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid #cccccc;
+}
+.list .comment1 .title {
+  font-size: 0.28rem;
+  color: #999;
+  text-align: center;
+  padding: 0.2rem 0 0 0;
+}
+.list .comment1 img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.2rem;
+}
+.list .comment1 .nr {
+  padding: 0.1rem;
+  margin: 0.2rem 0.2rem;
+  background-color: #f8f8f8;
+  font-size: 0.28rem;
+  color: #999;
+  border: 1px solid #ccc;
+  position: relative;
+}
+.list .comment1 .nr .user {
+  height: 0.6rem;
+  line-height: 0.6rem;
+}
+.list .comment1 .nr span {
+  color: #ff9314;
+  font-size: 0.48rem;
+  vertical-align: bottom;
+}
+.list .comment1 .nr i {
+  font-size: 0.24rem;
+}
+.list .comment1 .nr .text {
+  color: black;
+}

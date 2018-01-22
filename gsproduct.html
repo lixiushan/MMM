@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Title</title>
+  <!--<link rel="stylesheet" href="lib/mui/css/mui.css">-->
+  <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/jsproduct.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo fl">
+      <a href="index.html"><</a>
+    </div>
+    <div class="app fr">
+      <img src="images/header_app.png" alt="">
+    </div>
+    <p class="title">凑单品</p>
+  </div>
+  <div class="main">
+    <div class="nav">
+      <ul class="clearfix item">
+        <li data-id="jd">
+          <a href="javascript:;">京东 <span class="fa fa-sort-asc"></span></a>
+        </li>
+        <li data-id="hb">
+          <a href="javascript:;">华北 <span class="fa fa-sort-asc"></span></a>
+        </li>
+        <li data-id="total">
+          <a href="javascript:;">全部价格 <span class="fa fa-sort-asc"></span></a>
+        </li>
+      </ul>
+      <div class="jd active">
+        <ul>
+          <!--<li>-->
+            <!--<a href="javascript:;">京东</a>-->
+          <!--</li>-->
+          <!--<li>-->
+            <!--<a href="javascript:;">一号店</a>-->
+          <!--</li>-->
+          <!--<li>-->
+            <!--<a href="javascript:;">天猫超市</a>-->
+          <!--</li>-->
+        </ul>
+      </div>
+      <div class="hb active">
+        <ul>
+          <!--<li>-->
+            <!--<a href="javascript:;">华北（北京、山西等）</a>-->
+          <!--</li>-->
+          <!--<li>-->
+            <!--<a href="javascript:;">华东（山东、浙江等）</a>-->
+          <!--</li>-->
+          <!--<li>-->
+            <!--<a href="javascript:;">华南（广东、广西等）</a>-->
+          <!--</li>-->
+          <!--<li>-->
+            <!--<a href="javascript:;">华中（湖北、河南等）</a>-->
+          <!--</li>-->
+          <!--<li>-->
+            <!--<a href="javascript:;">西南（四川、云南等）</a>-->
+          <!--</li>-->
+          <!--<li>-->
+            <!--<a href="javascript:;">东北（辽宁、吉林等）</a>-->
+          <!--</li>-->
+          <!--<li>-->
+            <!--<a href="javascript:;">西北（宁夏、新疆等）</a>-->
+          <!--</li>-->
+        </ul>
+      </div>
+      <div class="total active">
+        <ul>
+          <li>
+            <a href="javascript:;">全部价格 <span class="fr active">√</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="icon">
+        <span class="fa fa-search"></span>
+      </div>
+    </div>
+    <div class="content">
+      <ul class="clearfix">
+        <!--<li>-->
+          <!--<a href="javascript:;">-->
+            <!--<div class="img">-->
+              <!--<img src="http://img10.360buyimg.com/n7/jfs/t577/85/103283769/55548/3ecfcbf8/5461b6e1N70e46439.jpg" alt="">-->
+            <!--</div>-->
+            <!--<div class="desc">-->
+              <!--<p class="title">廿一客(21cake)专用餐具 1人份(不单独配送)</p>-->
+              <!--<p class="money">¥1.00 <span class="fr">去凑单</span></p>-->
+            <!--</div>-->
+          <!--</a>-->
+        <!--</li>-->
+
+      </ul>
+    </div>
+    <div class="footer">
+      <ul class="clearfix">
+        <li>
+          <a href="javascript:;">登录</a>
+        </li>
+        <li>
+          <a href="javascript:;">注册</a>
+        </li>
+        <li>
+          <a href="javascript:;"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">回到顶部</a>
+        </li>
+      </ul>
+      <p style="text-align: center" class="app">
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>
+        <a href="index.html" style="color: #333;">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p class="link">m.manmanbuy.com</p>
+    </div>
+  </div>
+
+
+</div>
+<script type="text/html" id="tpl1">
+    {{each result v i}}
+      <li data-shopid="{{v.shopId}}">
+        <a href="javascript:;">{{v.shopName}} <span class="fr active">√</span></a>
+      </li>
+    {{/each}}
+</script>
+<script type="text/html" id="tpl2">
+  {{each result v i}}
+  <li data-areaid="{{v.areaId}}">
+    <a href="javascript:;">{{v.areaName}} <span class="fr active">√</span></a>
+  </li>
+  {{/each}}
+</script>
+<script type="text/html" id="tpl3">
+  {{each result v i}}
+    <li>
+      <a href="javascript:;">
+        <div class="img">
+          <img src="{{v.productImg}}" alt="">
+        </div>
+        <div class="desc">
+          <p class="title one-txt-cut">{{v.productName}}</p>
+          <p class="money">{{v.productPrice}} <span class="fr">去凑单</span></p>
+        </div>
+      </a>
+    </li>
+  {{/each}}
+</script>
+</body>
+</html>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<!--<script src="lib/mui/js/mui.js"></script>-->
+<script src="js/common.js"></script>
+<script src="js/jsproduct.js"></script>

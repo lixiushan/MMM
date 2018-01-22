@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Title</title>
+  <!--<link rel="stylesheet" href="lib/mui/css/mui.css">-->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/productList.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo fl">
+      <a href="index.html"><img src="./images/header_logo.png" alt=""></a>
+    </div>
+    <div class="app fr">
+      <img src="images/header_app.png" alt="">
+    </div>
+  </div>
+  <div class="main">
+    <div class="search clearfix">
+      <input type="text" name="" id="" placeholder="请输入你想比价的商品" class="fl">
+      <button class="fr">搜索</button>
+    </div>
+
+    <div class="product">
+      <h4 class="nav">
+        <!--<a href="index.html">首页</a>-->
+        <!--<span> > </span>-->
+        <!--<a href="#">全部分类</a>-->
+        <!--<span> > </span>-->
+        <!--<a href="#">电视</a>-->
+        <!--<a href="javascript:;" class="fr select">帅选</a>-->
+      </h4>
+      <div class="list">
+        <ul>
+          <!--<li>-->
+            <!--<a href="javascript:;" class="clearfix" style="display: block">-->
+              <!--<div class="img fl">-->
+                <!--<img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015515937123.png" alt="">-->
+              <!--</div>-->
+              <!--<div class="content">-->
+                <!--<p>哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈</p>-->
+                <!--<div class="bottom">-->
+                  <!--<p class="price"><span>&yen;888</span></p>-->
+                  <!--<p class="comment">-->
+                    <!--<span>报价(9)</span>-->
+                    <!--<span>评论(99)</span>-->
+                  <!--</p>-->
+                <!--</div>-->
+
+              <!--</div>-->
+            <!--</a>-->
+          <!--</li>-->
+
+        </ul>
+      </div>
+      <ul class="page clearfix">
+        <!--<li class="prev"><span>上一页</span></li>-->
+        <!--<li class="page-item">-->
+          <!--<div class="page-default">-->
+            <!--1/3-->
+            <!--<span class="icon"></span>-->
+          <!--</div>-->
+          <!--<div class="page-list active">-->
+            <!--<div>1/3</div>-->
+            <!--<div>2/3</div>-->
+            <!--<div>3/3</div>-->
+          <!--</div>-->
+        <!--</li>-->
+        <!--<li class="next"><span>下一页</span></li>-->
+      </ul>
+    </div>
+    <div class="footer">
+      <ul class="clearfix">
+        <li>
+          <a href="javascript:;">登录</a>
+        </li>
+        <li>
+          <a href="javascript:;">注册</a>
+        </li>
+        <li>
+          <a href="javascript:;"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">回到顶部</a>
+        </li>
+      </ul>
+      <p style="text-align: center" class="app">
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>
+        <a href="index.html" style="color: #333;">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p class="link">m.manmanbuy.com</p>
+    </div>
+  </div>
+
+
+</div>
+<script type="text/html" id="tpl1">
+  {{each result v i}}
+  <a href="index.html">首页</a>
+  <span> > </span>
+  <a href="category.html">全部分类</a>
+  <span> > </span>
+  <a href="#">{{v.category}}</a>
+  <a href="javascript:;" class="fr select">帅选</a>
+  {{/each}}
+</script>
+<script type="text/html" id="tpl2">
+  {{each result v i}}
+  <li>
+    <a href="productDetails.html?productid={{v.productId}}&category={{category}}" class="clearfix" style="display: block">
+      <div class="img fl">
+        {{#v.productImg}}
+      </div>
+      <div class="content">
+        <p>{{v.productName}}</p>
+        <div class="bottom">
+          <p class="price"><span>&yen;{{v.productPrice}}</span></p>
+          <p class="comment">
+            <span>{{v.productQuote}}</span>
+            <span>{{v.productCom}})</span>
+          </p>
+        </div>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+<script type="text/html" id="tpl3">
+  <li class="prev {{page<=1?'now':''}}" data-page="{{page<=1?1:page-1}}"><span>上一页</span></li>
+  <li class="page-item">
+    <div class="page-default">
+      <p>{{page}}/{{count}}</p>
+      <span class="icon"></span>
+    </div>
+
+    <div class="page-list active">
+      <% for(var i = 0; i < count; i++){ %>
+      <div data-page="{{i+1}}">{{i+1}}/<%=count %></div>
+
+      <% } %>
+    </div>
+  </li>
+  <li class="next {{page>=count?'now':''}}" data-page="{{page>=count?count:page+1}}"><span>下一页</span></li>
+</script>
+</body>
+</html>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<!--<script src="lib/mui/js/mui.js"></script>-->
+<script src="js/common.js"></script>
+<script src="js/productList.js"></script>

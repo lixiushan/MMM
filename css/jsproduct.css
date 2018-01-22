@@ -1,0 +1,139 @@
+@charset "UTF-8";
+body {
+  background-color: #f1f1f1;
+}
+.header .logo {
+  padding: 0;
+}
+.header .logo a {
+  display: block;
+  color: white;
+  height: 100%;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  padding-left: 0.2rem;
+}
+.header .title {
+  position: absolute;
+  font-size: 0.4rem;
+  color: white;
+  font-weight: 700;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav {
+  height: 0.84rem;
+  position: relative;
+  margin-bottom: 0.1rem;
+}
+.nav .item {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.nav .item li {
+  float: left;
+  width: 31%;
+  font-size: 0.32rem;
+}
+.nav .item li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0.2rem 0;
+}
+.nav .item li a span {
+  vertical-align: bottom;
+}
+.nav .jd,
+.nav .hb,
+.nav .total {
+  background-color: #fff;
+  font-size: 0.32rem;
+  position: absolute;
+  width: 100%;
+}
+.nav .jd a,
+.nav .hb a,
+.nav .total a {
+  color: black;
+  display: block;
+  padding: 0.1rem 0.2rem;
+  border-bottom: 1px solid #eee;
+}
+.nav .jd.active,
+.nav .hb.active,
+.nav .total.active {
+  display: none;
+}
+.nav .jd span,
+.nav .hb span,
+.nav .total span {
+  color: #ff841d;
+  font-size: 0.36rem;
+}
+.nav .jd span.active,
+.nav .hb span.active {
+  display: none;
+}
+.nav .jd span.now,
+.nav .hb span.now {
+  display: block;
+}
+.nav .icon {
+  height: 97%;
+  width: 0.8rem;
+  position: absolute;
+  font-size: 0.4rem;
+  color: #666;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+}
+.nav .icon span {
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+}
+.content {
+  padding: 1%;
+}
+.content li {
+  background-color: #fff;
+  float: left;
+  width: 49.5%;
+  margin-bottom: 1%;
+}
+.content li:nth-child(odd) {
+  margin-right: 1%;
+}
+.content a {
+  display: block;
+  padding: 0 0.1rem 0.1rem;
+}
+.content a .img {
+  height: 3.6rem;
+}
+.content a img {
+  width: 3.6rem;
+  height: 3.6rem;
+  margin: 0 auto;
+}
+.content a .desc .title {
+  font-size: 0.24rem;
+  color: black;
+}
+.content a .desc .money {
+  font-size: 0.4rem;
+  color: #f8601d;
+}
+.content a .desc .money span {
+  padding: 0.1rem 0.16rem;
+  border-radius: 0.06rem;
+  background-color: #ff9501;
+  width: 1.6rem;
+  color: #fff;
+  font-size: 0.28rem;
+  text-align: center;
+  margin-bottom: 0.1rem;
+}

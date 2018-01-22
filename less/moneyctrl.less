@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+.header {
+  .logo{
+    padding: 0;
+    a{
+      display: block;
+      color: white;
+      height: 100%;
+      font-size: 30/50rem;
+      line-height: 50/50rem;
+      padding-left: 10/50rem;
+    }
+  }
+  .title {
+    position: absolute;
+    //text-align: left;
+    font-size: 20/50rem;
+    color: white;
+    font-weight:700;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    //overflow: hidden;
+  }
+
+}
+
+.list {
+
+  li{
+    border-bottom: 1px solid #ccc;
+    padding: 10/50rem 10/50rem;
+  }
+  a{
+    height:100/50rem;
+
+  }
+  img {
+    width:100/50rem;
+    height:100/50rem;
+    margin-right: 20/50rem;
+  }
+  .content{
+    height: 100%;
+    overflow: hidden;
+    font-size: 16/50rem;
+    color: black;
+    position: relative;
+    >p {
+      span{
+        color: #ff6c00;
+      }
+    }
+  }
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 12/50rem;
+    color: #666;
+  }
+}
+
+.page{
+  margin-top: 10/50rem;
+  font-size:16/50rem;
+  li {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+    span {
+      margin: 0 auto;
+      width: 80/50rem;
+      display: block;
+      padding: 5/50rem;
+      background-color: #ddd;
+      box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    }
+  }
+  .page-item{
+    position: relative;
+  }
+  .page-item .page-default{
+    margin: 0 auto;
+    width: 80/50rem;
+    padding: 5/50rem;
+    border: 1px solid #ccc;
+  }
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    width: 0px;
+    height: 0px;
+    padding: 0;
+    //background-color: black;
+    //border: transparent;
+    background-color: #fff;
+    box-shadow: none;
+    border-top: 5/50rem solid blue;
+    border-bottom: 5/50rem solid transparent;
+    border-left: 5/50rem solid transparent;
+    border-right: 5/50rem solid transparent;
+  }
+  .page-list {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80/50rem;
+    //padding: 5/50rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    div:hover{
+      background-color: skyblue;
+    }
+  }
+  .page-list.active{
+    display: none;
+  }
+  .prev.now span,
+  .next.now span {
+    background-color: #eee;
+    color: #999;
+  }
+}

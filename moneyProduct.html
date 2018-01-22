@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Title</title>
+  <!--<link rel="stylesheet" href="lib/mui/css/mui.css">-->
+  <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/moneyProduct.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo fl">
+      <a href="javascript:history.go(-1);"><</a>
+    </div>
+    <div class="app fr">
+      <img src="images/header_app.png" alt="">
+    </div>
+    <p class="title">国内折扣</p>
+  </div>
+  <div class="main">
+    <!--<div class="title">-->
+      <!--<h3>移动端凑单品：海天 鲜味 生抽 1.28L</h3>-->
+    <!--</div>-->
+    <!--<p class="subtitle"><span>京东商城</span> <span>10-25 14:10</span> <span>小编烟火 / 慢慢买</span></p>-->
+    <!--<div class="content">-->
+      <!--<p><img class="img1 fr" src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="">-->
+        <!--作白切系列的蘸酱调料，相信吃过美味鲜的慢友们都了海天的金标生抽酱油，采用了非转基因大豆以及小麦发酵而成，而自然鲜的口感是有些鲜甜鲜甜的感觉，非常适合用来作为日常炒菜用的调味料，当然也能用作白切系列的蘸酱调料，相信吃过美味鲜的慢友们都了解的。解的</p>-->
+      <!--<p>作白切系列的蘸酱调料，相信吃过美味鲜的慢友们都了解的</p>-->
+      <!--<img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="">-->
+    <!--</div>-->
+    <!--<div class="source">-->
+      <!--<ul>-->
+        <!--<li class="clearfix">-->
+          <!--<span class="fl">北京</span>-->
+          <!--<span class="fr">有货</span>-->
+        <!--</li>-->
+        <!--<li class="clearfix">-->
+          <!--<span class="fl">北京</span>-->
+          <!--<span class="fr">有货</span>-->
+        <!--</li>-->
+        <!--<li class="clearfix">-->
+          <!--<span class="fl">北京</span>-->
+          <!--<span class="fr">有货</span>-->
+        <!--</li>-->
+        <!--<li class="clearfix">-->
+          <!--<span class="fl">北京</span>-->
+          <!--<span class="fr">有货</span>-->
+        <!--</li>-->
+        <!--<li class="clearfix">-->
+          <!--<span class="fl">北京</span>-->
+          <!--<span class="fr">有货</span>-->
+        <!--</li>-->
+        <!--<li class="clearfix">-->
+          <!--<span class="fl">北京</span>-->
+          <!--<span class="fr">有货</span>-->
+        <!--</li>-->
+        <!--<li class="clearfix">-->
+          <!--<span class="fl">北京</span>-->
+          <!--<span class="fr">有货</span>-->
+        <!--</li>-->
+        <!--<li class="clearfix">-->
+          <!--<span class="fl">北京</span>-->
+          <!--<span class="fr">有货</span>-->
+        <!--</li>-->
+        <!--<li class="clearfix">-->
+          <!--<span class="fl">北京</span>-->
+          <!--<span class="fr">有货</span>-->
+        <!--</li>-->
+        <!--<li class="clearfix">-->
+          <!--<span class="fl">北京</span>-->
+          <!--<span class="fr">有货</span>-->
+        <!--</li>-->
+
+      <!--</ul>-->
+    <!--</div>-->
+    <div class="buy">前去购买</div>
+    <div class="weixin">
+      <img src="images/mmbweixin2.png" alt="">
+    </div>
+    <div class="comment">
+      <p>发表评论</p>
+      <div class="text">
+        <textarea name=""></textarea>
+        <input type="button" value="发表评论">
+      </div>
+
+      <p class="newcom">最新评论</p>
+      <div class="users clearfix">
+        <div class="img fl">
+          <img src="http://home.manmanbuy.com/upface/face/1466230634_162.jpg" alt="">
+        </div>
+        <div class="content1">
+          <p class="username">赶鸭子上架 <span class="time fr">2016/10/25 14:18:45</span></p>
+          <p>比超市便宜了几块</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <ul class="clearfix">
+        <li>
+          <a href="javascript:;">登录</a>
+        </li>
+        <li>
+          <a href="javascript:;">注册</a>
+        </li>
+        <li>
+          <a href="javascript:;"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">回到顶部</a>
+        </li>
+      </ul>
+      <p style="text-align: center" class="app">
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>
+        <a href="index.html" style="color: #333;">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p class="link">m.manmanbuy.com</p>
+    </div>
+
+  </div>
+
+
+</div>
+<script type="text/html" id="tpl1">
+  <div class="title">
+    <h3>{{result[0].productName}}L</h3>
+  </div>
+  <p class="subtitle"><span>{{result[0].productFrom}}</span> <span>{{result[0].productTime}}</span> <span>{{result[0].productTips}}</span></p>
+  <div class="content">
+    <p>{{#result[0].productImgSm}}
+      {{result[0].productInfo2}}</p>
+    <p>{{result[0].productInfo}}</p>
+    {{#result[0].productImgSm}}
+  </div>
+  <div class="source">
+    <ul>
+      <% for(var i = 0; i < 30; i++){%>
+      <li class="clearfix">
+        <span class="fl">北京</span>
+        <span class="fr">有货</span>
+      </li>
+      <% } %>
+    </ul>
+  </div>
+</script>
+</body>
+</html>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<!--<script src="lib/mui/js/mui.js"></script>-->
+<script src="js/common.js"></script>
+<script src="js/moneyProduct.js"></script>

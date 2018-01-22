@@ -1,0 +1,61 @@
+@charset "UTF-8";
+.header .logo {
+  padding: 0;
+}
+.header .logo a {
+  display: block;
+  color: white;
+  height: 100%;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  padding-left: 0.2rem;
+}
+.header .title {
+  position: absolute;
+  font-size: 0.4rem;
+  color: white;
+  font-weight: 700;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.content li {
+  float: left;
+  width: 50%;
+  padding: 0.4rem;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  height: 6.32rem;
+  position: relative;
+}
+.content li .desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.4rem;
+}
+.content li:nth-child(even) {
+  border-right: none;
+}
+.content a {
+  display: block;
+  color: #333;
+}
+.content img {
+  width: 3.6rem;
+  height: 3.6rem;
+  margin: 0 auto;
+}
+.content h5 {
+  font-size: 0.28rem;
+  height: 0.8rem;
+}
+.content .money {
+  font-size: 0.28rem;
+  color: #ff6c00;
+  margin-bottom: 0.2rem;
+}
+.content .time {
+  font-size: 0.24rem;
+  color: #999;
+}

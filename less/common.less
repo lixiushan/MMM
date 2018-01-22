@@ -1,0 +1,86 @@
+
+@import "adapter";
+html,body {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  height: 100%;
+  //background-color: pink;
+  margin: 0 auto;
+  padding-top: 50/50rem;
+  position: relative;
+}
+.header {
+  height: 50/50rem;
+  width: 100%;
+  background-color: #ff841d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  .logo {
+    height: 100%;
+    width: 370/50rem;
+    //background-color: goldenrod;
+    padding: 12.5/50rem 20/50rem;
+    img {
+      width: 185.5/50rem;
+      height: 25/50rem;
+    }
+  }
+  .app{
+    height: 100%;
+    padding: 8/50rem;
+    img{
+      width: 34/50rem;
+      height: 34/50rem;
+    }
+  }
+}
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.footer{
+  margin: 30/50rem 0 0 0;
+  li{
+    float: left;
+    width: 33.33%;
+    a{
+      display: block;
+      text-align: center;
+      padding: 10/50rem;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      font-size: 14/50rem;
+      color: #333;
+      img{
+        display: inline-block;
+        height: 14/50rem;
+        //vertical-align: middle;
+        margin-bottom: -2/50rem;
+      }
+    }
+  }
+  li:last-child a{
+    border-right: none;
+  }
+  .app {
+    font-size: 12/50rem;
+    margin-bottom:0;
+    margin-top:20/50rem;
+    a{
+      font-size: 12/50rem;
+    }
+  }
+  .link {
+    font-size: 12/50rem;
+    text-align: center;
+  }
+}

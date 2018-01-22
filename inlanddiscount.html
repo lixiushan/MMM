@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Title</title>
+  <!--<link rel="stylesheet" href="lib/mui/css/mui.css">-->
+  <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/inlanddiscound.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo fl">
+      <a href="javascript:history.go(-1);"><</a>
+    </div>
+    <div class="app fr">
+      <img src="images/header_app.png" alt="">
+    </div>
+    <p class="title">国内折扣</p>
+  </div>
+  <div class="main">
+
+    <ul class="content clearfix">
+      <!--<li>-->
+        <!--<a href="javascript:;">-->
+          <!--<img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="">-->
+          <!--<h5>西域美农新疆特产五星和田红枣250g*2</h5>-->
+          <!--<p class="money">19.8元(5件99元)</p>-->
+          <!--<p class="time">苏宁易购 | 10-22 13:29</p>-->
+        <!--</a>-->
+      <!--</li>-->
+
+    </ul>
+
+    <div class="footer">
+      <ul class="clearfix">
+        <li>
+          <a href="javascript:;">登录</a>
+        </li>
+        <li>
+          <a href="javascript:;">注册</a>
+        </li>
+        <li>
+          <a href="javascript:;"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">回到顶部</a>
+        </li>
+      </ul>
+      <p style="text-align: center" class="app">
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>
+        <a href="index.html" style="color: #333;">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p class="link">m.manmanbuy.com</p>
+    </div>
+
+  </div>
+
+
+</div>
+<script type="text/html" id="tpl1">
+  {{each result v i}}
+  <li>
+    <a href="discounct.html?productid={{v.productId}}">
+      {{#v.productImg}}
+
+      <div class="desc">
+        <h5>{{v.productName}}</h5>
+        <p class="money">{{v.productPrice}}</p>
+        <p class="time">{{v.productFrom}} | {{v.productTime}}</p>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+</body>
+</html>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<!--<script src="lib/mui/js/mui.js"></script>-->
+<script src="js/common.js"></script>
+<script src="js/inlanddiscound.js"></script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    li{
+      float: left;
+    }
+  </style>
+</head>
+<body>
+      <ul style="display: none">
+        <!--<li><img src="images/ic_bcj.png" alt=""></li>-->
+      </ul>
+</body>
+<script type="text/html" id="tpl1">
+
+  <li><img src="images/ic_bcj.png" alt=""></li>
+  <li><img src="images/ic_bcj.png" alt=""></li>
+</script>
+</html>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script>
+  $(function () {
+
+    $.ajax({
+      type:'get',
+      success: function () {
+        console.log(1);
+        $('ul').html(template('tpl1',{}));
+        console.log($('li img').width());
+      }
+    });
+//    console.log($('li').width());
+  })
+</script>
